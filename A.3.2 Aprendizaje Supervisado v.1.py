@@ -58,12 +58,12 @@ while True:
     congestion = int(input("¿Tienes Congestion? -> "))
     dolorCabeza = int(input("¿Tienes Dolor de Cabeza? -> "))
     dolroGarganta = int(input("¿Tienes Dolor de Garganta? -> "))
-    fiebre = int(input("¿Tienes Congestion? -> "))
+    fiebre = int(input("¿Tienes fiebre? -> "))
     print("\n")
 
-    probAlergia =  round(evaluarSintomas("alergia"), 4)
-    probInfeccion =  round(evaluarSintomas("infeccion"), 4)
-    proResfriado = round(evaluarSintomas("resfriado"), 4)
+    probAlergia =  round(evaluarSintomas("alergia"), 4) * 100
+    probInfeccion =  round(evaluarSintomas("infeccion"), 4) * 100
+    proResfriado = round(evaluarSintomas("resfriado"), 4) * 100
 
     print("USTED PUEDE TENER....")
     print("Alergia: " + str(probAlergia))
