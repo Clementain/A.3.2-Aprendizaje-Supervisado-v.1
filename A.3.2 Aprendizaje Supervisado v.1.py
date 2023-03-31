@@ -61,7 +61,7 @@ def evaluarSintomas(condicion):
 
 
 while True:
-    print("<'--------- BIENVENIDO AL CONSULTORIO ---------")
+    print("<--------- BIENVENIDO AL CONSULTORIO --------->")
     print("\nPor favor indique si presenta algun sintoma '1' para indicar que SI y '0' para indicar que NO")
 
     congestion = int(input("¿Tienes Congestion? -> "))
