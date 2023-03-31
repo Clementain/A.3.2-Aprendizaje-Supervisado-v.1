@@ -52,12 +52,16 @@ def evaluarSintomas(condicion):
     else:
         sintoma4 = 0
 
-    return ((sintoma1 + sintoma2 + sintoma3 + sintoma4)/(congestion+dolorCabeza+dolroGarganta+fiebre))
+    if congestion+dolorCabeza+dolroGarganta+fiebre == 0:
+        return 0
+    else:
+        return ((sintoma1 + sintoma2 + sintoma3 + sintoma4)/(congestion+dolorCabeza+dolroGarganta+fiebre))
+
     # return (sintoma1 + sintoma2 + sintoma3 + sintoma4) / tabla_contingencia.ioc[row, 4]
 
 
 while True:
-    print("<'n--------- BIENVENIDO AL CONSULTORIO ---------")
+    print("<'--------- BIENVENIDO AL CONSULTORIO ---------")
     print("\nPor favor indique si presenta algun sintoma '1' para indicar que SI y '0' para indicar que NO")
 
     congestion = int(input("¿Tienes Congestion? -> "))
